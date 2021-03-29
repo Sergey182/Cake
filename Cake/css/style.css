@@ -6953,6 +6953,22 @@ body {
   width: 100%;
 }
 
+.catalog__inner-item {
+  cursor: pointer;
+}
+
+.catalog__inner-cardholder {
+  display: none;
+}
+
+.catalog__inner-cardholder.active {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
 .catalog__inner-items {
   display: flex;
   width: 100%;
@@ -6974,14 +6990,6 @@ body {
 .catalog__inner-items a:focus {
   color: white;
   background-color: #4B3939;
-}
-
-.catalog__inner-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
 }
 
 .catalog__inner-card {
