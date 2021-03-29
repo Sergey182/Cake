@@ -1,0 +1,134 @@
+/*==========================================HEADER============================================================*/
+
+
+.header__top {
+    width: 100%;
+    height: 40px;
+    background-color: $bg-color;
+}
+
+.header__top-inner {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__logo-name {
+    font-family: 'Lobster';
+    @include adaptive-font(32, 26);
+    padding: 0 1rem;
+}
+
+.header__logo-img {
+    max-width: 22%;
+}
+
+.logo-img {
+    width: 100%;
+    display: block;
+}
+
+.header__top-contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+    li:not(:first-child) {
+        padding-left: 2rem;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.phone-icon::before {
+    display: inline-block;
+    content: '\f879';
+    font-family: 'Font Awesome 5 Free',
+        'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: $logo-color;
+    margin-right: .2rem;
+}
+
+.mail-icon::before {
+    display: inline-block;
+    content: '\f0e0';
+    font-family: 'Font Awesome 5 Free',
+        'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: $logo-color;
+    margin-right: .2rem;
+}
+
+.contacts-social-icons a:hover,
+.contacts-social-icons a:active,
+.contacts-social-icons a:focus {
+    transition: .3s linear;
+    color: $logo-color;
+}
+
+
+.header__bottom {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 1px 5px 0px rgb(212, 212, 212);
+}
+
+
+.header__bottom-inner {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+
+    li:not(:first-child) {
+        padding-left: 2rem;
+    }
+
+    li:not(:last-child):after {
+        display: inline-block;
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 30px;
+        background-color: $logo-color;
+        margin-left: 30px;
+        vertical-align: middle;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    :hover {
+        transition: .3s linear;
+        color: $logo-color;
+    }
+}
+
+
+.header__burger {
+    display: none;
+}
+
+
+/*==========================================HEADER  END============================================================*/

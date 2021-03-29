@@ -1,0 +1,24 @@
+$logo-color: #FF5975;
+$text-color:#4B3939;
+$bg-color:#FFE9CC;
+
+%h2 {
+    @include adaptive-font(42, 32);
+    font-family: 'Lobster';
+    font-weight: 700;
+    margin-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+%dots {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: $logo-color;
+    margin: 0 1.2rem;
+    vertical-align: middle;
+}

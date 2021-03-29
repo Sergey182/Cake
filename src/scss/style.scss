@@ -1,0 +1,53 @@
+
+// Переменные, миксины, шрифты и т.д
+@import "./vendor/reset";
+@import "./vendor/normalize";
+@import "./vendor/mixin";
+@import "fonts.scss";
+@import "./vendor/variables";
+@import "./vendor/container";
+@import "./vendor/all";
+
+
+
+// Основной шрифт и установка box-sizing
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Cuprum", sans-serif;
+    font-weight: 500;
+    @include adaptive-font(18, 14);
+    color: $text-color;
+    overflow-x: hidden;
+}
+
+
+// Подключение секций 
+@import "./blocks/header";
+@import "./blocks/header-slider";
+@import "./blocks/catalog";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

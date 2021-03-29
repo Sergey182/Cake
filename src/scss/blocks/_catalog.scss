@@ -1,0 +1,117 @@
+.catalog__title {
+    @extend %h2;
+}
+
+.catalog__title::after, .catalog__title::before {
+    @extend %dots;
+}
+
+.catalog__inner-nav {
+    width: 100%;
+}
+
+.catalog__inner-items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.catalog__inner-items a {
+    color: $text-color;
+    border: 1px solid $text-color;
+    padding: 0.4rem 1.6rem;
+    border-radius: 30px;
+    transition: 0.3s linear;
+        &:hover,&:active,&:focus {
+            color: white;
+            background-color: $text-color;
+        }
+}
+
+.catalog__inner-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.catalog__inner-card {
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease-out;
+        &:hover {
+            box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.404);
+        }
+}
+
+.card-image {
+    width: 100%;
+    overflow:hidden;
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            transition: all 1s ease-out;
+        }       
+}
+
+.card-image__pic:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    background-color: $bg-color;
+}
+
+.card-content__price {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-content__title {
+    @include adaptive-font(30, 22);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.card-content__desc {
+@include adaptive-font(20, 16);
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.card-content__price {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price {
+    @include adaptive-font(24, 18);
+    font-family: 'Lobster';
+    font-weight: 900;
+}
+
+.price__btn {
+    color:white;
+    background-color: $logo-color;
+    padding: 0.4rem 1.6rem;
+    border-radius: 30px;
+    transition: 0.3s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: white;
+        background-color: #fa2a4d;
+    }
+}
+
+
