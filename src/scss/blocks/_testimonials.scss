@@ -1,0 +1,59 @@
+.testimonials {
+    margin-bottom: 4rem;
+}
+
+
+.testimonials__title {
+    @extend %h2;
+}
+
+.testimonials__title::after,
+.testimonials__title::before {
+    @extend %dots;
+}
+
+
+.testimonials__card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+
+.testimonials__card-image {
+    width: 12%;
+    padding: 2rem 0;
+        img {
+            width: 100%;
+            display: block;
+            border-radius: 100px;
+        }
+}
+
+.testimonials__card-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.testimonials__card-desc {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.testimonials__card-name {
+    @include adaptive-font(22, 16);
+    margin-bottom: .5rem;
+    color: $logo-color;
+}
+
+.testimonials__card-career {
+    @include adaptive-font(14, 12);
+}
+
+

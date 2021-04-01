@@ -10,6 +10,7 @@
 
 
 
+
 // Основной шрифт и установка box-sizing
 html {
     box-sizing: border-box;
@@ -35,6 +36,8 @@ body {
 @import "./blocks/header-slider";
 @import "./blocks/catalog";
 @import "./blocks/special";
+@import "./blocks/testimonials";
+
 
 
 

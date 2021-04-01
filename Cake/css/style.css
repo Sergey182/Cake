@@ -594,7 +594,8 @@ template {
 }
 
 .catalog__title,
-.special__title {
+.special__title,
+.testimonials__title {
   font-family: 'Lobster';
   font-weight: 700;
   margin-bottom: 5%;
@@ -605,7 +606,9 @@ template {
 .catalog__title::after,
 .catalog__title::before,
 .special__title::after,
-.special__title::before {
+.special__title::before,
+.testimonials__title::after,
+.testimonials__title::before {
   display: inline-block;
   content: '';
   width: 10px;
@@ -7083,6 +7086,7 @@ body {
 
 .special {
   background-color: #FFE9CC;
+  margin-bottom: 4rem;
 }
 
 .special-wrap {
@@ -7126,7 +7130,7 @@ body {
 
 .i1 {
   position: absolute;
-  top: 1200px;
+  top: 1300px;
   left: 100px;
   width: 10%;
 }
@@ -7138,7 +7142,7 @@ body {
 
 .i2 {
   position: absolute;
-  top: 700px;
+  top: 1000px;
   right: 100px;
   width: 15%;
 }
@@ -7148,9 +7152,56 @@ body {
   display: block;
 }
 
+.special__image-wrap {
+  padding: 2rem 0;
+}
+
+.testimonials {
+  margin-bottom: 4rem;
+}
+
+.testimonials__card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.testimonials__card-image {
+  width: 12%;
+  padding: 2rem 0;
+}
+
+.testimonials__card-image img {
+  width: 100%;
+  display: block;
+  border-radius: 100px;
+}
+
+.testimonials__card-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.testimonials__card-desc {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.testimonials__card-name {
+  margin-bottom: .5rem;
+  color: #FF5975;
+}
+
 @media (min-width: 767px) {
   .catalog__title,
-  .special__title {
+  .special__title,
+  .testimonials__title {
     font-size: calc(32px + 10 * (100vw / 1200));
   }
 
@@ -7189,6 +7240,14 @@ body {
   .special__subtitle {
     font-size: calc(16px + 4 * (100vw / 1200));
   }
+
+  .testimonials__card-name {
+    font-size: calc(16px + 6 * (100vw / 1200));
+  }
+
+  .testimonials__card-career {
+    font-size: calc(12px + 2 * (100vw / 1200));
+  }
 }
 
 @media (max-width: 1200px) {
@@ -7205,7 +7264,8 @@ body {
 
 @media (max-width: 767px) {
   .catalog__title,
-  .special__title {
+  .special__title,
+  .testimonials__title {
     font-size: calc(32px + 17 * ((100vw - 320px) / 1200));
   }
 
@@ -7247,5 +7307,13 @@ body {
 
   .special__subtitle {
     font-size: calc(16px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .testimonials__card-name {
+    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1200));
+  }
+
+  .testimonials__card-career {
+    font-size: calc(12px + 3.4 * ((100vw - 320px) / 1200));
   }
 }

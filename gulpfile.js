@@ -34,6 +34,8 @@ let {src, dest} = require('gulp'),
     browsersync = require("browser-sync").create(),
     del = require("del"),
     scss = require("gulp-sass"),
+    sourceMaps = require("gulp-sourcemaps"),
+    rigger = require("gulp-rigger"),
     autoprefixer = require("gulp-autoprefixer"),
     group_media = require("gulp-group-css-media-queries"),
     clean_css = require("gulp-clean-css"),
@@ -98,9 +100,9 @@ function css() {
 
 
 
-function js() {
+function  js() {
     return src(path.src.js)
-        .pipe(fileinclude())
+        .pipe(rigger())
         .pipe(dest(path.build.js))
         .pipe (
             uglify()
@@ -143,6 +145,10 @@ function fonts() {
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
 };
+
+
+
+
 
 gulp.task('otf2ttf', function () {
     return gulp.src([source_folder + '/fonts/*.otf']) 

@@ -1,5 +1,6 @@
 .special {
     background-color: $bg-color;
+    margin-bottom: 4rem;
 }
 
 .special-wrap {
@@ -50,7 +51,7 @@
 
 .i1 {
     position: absolute;
-    top: 1200px;
+    top: 1300px;
     left: 100px;
     width: 10%;
         img {
@@ -61,11 +62,15 @@
 
 .i2 {
     position: absolute;
-    top: 700px;
+    top: 1000px;
     right: 100px;
     width: 15%;
         img {
             width: 100%;
             display: block;
         }
+}
+
+.special__image-wrap {
+    padding: 2rem 0;
 }
