@@ -7301,6 +7301,88 @@ body {
   margin-right: .2rem;
 }
 
+.contacts__inner-form {
+  width: 100%;
+  height: 423px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-name,
+.form-email {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.form-name input,
+.form-email input {
+  min-width: 260px;
+  height: 40px;
+  border: none;
+  padding: 0 1rem;
+}
+
+.form-name ::-moz-placeholder, .form-email ::-moz-placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.form-name :-ms-input-placeholder, .form-email :-ms-input-placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.form-name ::placeholder,
+.form-email ::placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.textarea textarea {
+  width: 100%;
+  height: 220px;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.textarea ::-moz-placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.textarea :-ms-input-placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.textarea ::placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.form-submit {
+  color: white;
+  background-color: #FF5975;
+  padding: 0.4rem 1.6rem;
+  border-radius: 30px;
+  transition: 0.3s linear;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form-submit:hover,
+.form-submit:active,
+.form-submit:focus {
+  color: white;
+  background-color: #fa2a4d;
+}
+
 @media (min-width: 767px) {
   .catalog__title,
   .special__title,
@@ -7356,6 +7438,31 @@ body {
 
   .testimonials__card-career {
     font-size: calc(12px + 2 * (100vw / 1200));
+  }
+
+  .form-name ::-moz-placeholder, .form-email ::-moz-placeholder {
+    font-size: calc(14px + 4 * (100vw / 1200));
+  }
+
+  .form-name :-ms-input-placeholder, .form-email :-ms-input-placeholder {
+    font-size: calc(14px + 4 * (100vw / 1200));
+  }
+
+  .form-name ::placeholder,
+  .form-email ::placeholder {
+    font-size: calc(14px + 4 * (100vw / 1200));
+  }
+
+  .textarea ::-moz-placeholder {
+    font-size: calc(14px + 4 * (100vw / 1200));
+  }
+
+  .textarea :-ms-input-placeholder {
+    font-size: calc(14px + 4 * (100vw / 1200));
+  }
+
+  .textarea ::placeholder {
+    font-size: calc(14px + 4 * (100vw / 1200));
   }
 }
 
@@ -7430,5 +7537,30 @@ body {
 
   .testimonials__card-career {
     font-size: calc(12px + 3.4 * ((100vw - 320px) / 1200));
+  }
+
+  .form-name ::-moz-placeholder, .form-email ::-moz-placeholder {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .form-name :-ms-input-placeholder, .form-email :-ms-input-placeholder {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .form-name ::placeholder,
+  .form-email ::placeholder {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .textarea ::-moz-placeholder {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .textarea :-ms-input-placeholder {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .textarea ::placeholder {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
   }
 }
