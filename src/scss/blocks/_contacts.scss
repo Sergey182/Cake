@@ -1,0 +1,124 @@
+.contacts {
+    background-color: $bg-color;
+    margin-bottom: 4rem;
+}
+
+.contacts__wrap {
+    padding-bottom: 3rem;
+}
+
+.contacts__title {
+    @extend %h2;
+    padding: 4rem 0 0 0;
+}
+
+.contacts__title::after,
+.contacts__title::before {
+    @extend %dots;
+}
+
+.contacts__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts__inner-content,
+.contacts__inner-form {
+    flex-basis: 48%;
+    padding: 1rem;
+}
+
+.contacts__inner-content {
+
+        h3 {
+            @extend %h3;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    
+}
+
+.contacts-adress {
+    margin-bottom: 2rem;
+        li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+}
+
+.contacts-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+        li  {
+            margin-right: 1rem;
+        }
+
+        a {
+            color: inherit;
+        }
+
+            :hover {
+            transition: .3s linear;
+            color: $logo-color;
+            }
+}
+
+
+.phone-icon::before {
+    display: inline-block;
+    content: '\f879';
+    font-family: 'Font Awesome 5 Free',
+        'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: $logo-color;
+    margin-right: .2rem;
+}
+
+.mail-icon::before {
+    display: inline-block;
+    content: '\f0e0';
+    font-family: 'Font Awesome 5 Free',
+        'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: $logo-color;
+    margin-right: .2rem;
+}
+
+.adress-icon::before {
+    display: inline-block;
+    content: '\f3c5';
+    font-family: 'Font Awesome 5 Free',
+        'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: $logo-color;
+    margin-right: .2rem;
+}
+
+.time-icon::before {
+    display: inline-block;
+    content: '\f017';
+    font-family: 'Font Awesome 5 Free',
+        'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: $logo-color;
+    margin-right: .2rem;
+}
+
+
+.contacts__inner-form {
+
+    h3 {
+        @extend %h3;
+    }
+}
+
+
+
+
+
+
+
+
+

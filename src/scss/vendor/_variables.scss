@@ -11,6 +11,15 @@ $bg-color:#FFE9CC;
     text-transform: uppercase;
 }
 
+%h3 {
+    @include adaptive-font(26, 20);
+    font-family: 'Lobster';
+    font-weight: 700;
+    margin-bottom: 5%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 
 %dots {
     display: inline-block;

@@ -595,11 +595,21 @@ template {
 
 .catalog__title,
 .special__title,
-.testimonials__title {
+.testimonials__title,
+.contacts__title {
   font-family: 'Lobster';
   font-weight: 700;
   margin-bottom: 5%;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts__inner-content h3,
+.contacts__inner-form h3 {
+  font-family: 'Lobster';
+  font-weight: 700;
+  margin-bottom: 5%;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -608,7 +618,9 @@ template {
 .special__title::after,
 .special__title::before,
 .testimonials__title::after,
-.testimonials__title::before {
+.testimonials__title::before,
+.contacts__title::after,
+.contacts__title::before {
   display: inline-block;
   content: '';
   width: 10px;
@@ -7153,7 +7165,7 @@ body {
 }
 
 .special__image-wrap {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .testimonials {
@@ -7198,11 +7210,108 @@ body {
   color: #FF5975;
 }
 
+.contacts {
+  background-color: #FFE9CC;
+  margin-bottom: 4rem;
+}
+
+.contacts__wrap {
+  padding-bottom: 3rem;
+}
+
+.contacts__title {
+  padding: 4rem 0 0 0;
+}
+
+.contacts__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__inner-content,
+.contacts__inner-form {
+  flex-basis: 48%;
+  padding: 1rem;
+}
+
+.contacts__inner-content p {
+  margin-bottom: 1rem;
+}
+
+.contacts-adress {
+  margin-bottom: 2rem;
+}
+
+.contacts-adress li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.contacts-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-social-icons li {
+  margin-right: 1rem;
+}
+
+.contacts-social-icons a {
+  color: inherit;
+}
+
+.contacts-social-icons :hover {
+  transition: .3s linear;
+  color: #FF5975;
+}
+
+.phone-icon::before {
+  display: inline-block;
+  content: '\f879';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  color: #FF5975;
+  margin-right: .2rem;
+}
+
+.mail-icon::before {
+  display: inline-block;
+  content: '\f0e0';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  color: #FF5975;
+  margin-right: .2rem;
+}
+
+.adress-icon::before {
+  display: inline-block;
+  content: '\f3c5';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  color: #FF5975;
+  margin-right: .2rem;
+}
+
+.time-icon::before {
+  display: inline-block;
+  content: '\f017';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  color: #FF5975;
+  margin-right: .2rem;
+}
+
 @media (min-width: 767px) {
   .catalog__title,
   .special__title,
-  .testimonials__title {
+  .testimonials__title,
+  .contacts__title {
     font-size: calc(32px + 10 * (100vw / 1200));
+  }
+
+  .contacts__inner-content h3,
+  .contacts__inner-form h3 {
+    font-size: calc(20px + 6 * (100vw / 1200));
   }
 
   body {
@@ -7265,8 +7374,14 @@ body {
 @media (max-width: 767px) {
   .catalog__title,
   .special__title,
-  .testimonials__title {
+  .testimonials__title,
+  .contacts__title {
     font-size: calc(32px + 17 * ((100vw - 320px) / 1200));
+  }
+
+  .contacts__inner-content h3,
+  .contacts__inner-form h3 {
+    font-size: calc(20px + 10.2 * ((100vw - 320px) / 1200));
   }
 
   .container {
