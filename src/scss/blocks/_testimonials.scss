@@ -13,6 +13,7 @@
 }
 
 
+
 .testimonials__card {
     width: 100%;
     display: flex;
@@ -21,10 +22,17 @@
     align-items: center;
     margin-bottom: 3rem;
     padding: 1rem;
+    text-align: center;
 }
 
 
+
+
 .testimonials__card-image {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
     width: 12%;
     padding: 2rem 0;
         img {
@@ -55,5 +63,10 @@
 .testimonials__card-career {
     @include adaptive-font(14, 12);
 }
+
+
+
+
+
 
 

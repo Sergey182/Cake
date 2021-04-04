@@ -8,6 +8,12 @@
 @import "./vendor/container";
 @import "./vendor/all";
 
+@import "../slick/slick-theme.scss";
+@import "../slick/slick.scss";
+
+
+
+
 
 
 
@@ -39,6 +45,8 @@ body {
 @import "./blocks/testimonials";
 @import "./blocks/contacts";
 @import "./blocks/footer";
+
+
 
 
 
