@@ -6762,6 +6762,61 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+/*=================================BURGER===========================================*/
+
+.header__burger {
+  display: none;
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: block;
+  z-index: 15;
+}
+
+.burger-btn span,
+.burger-btn span::after,
+.burger-btn span:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #4B3939;
+  top: 50%;
+}
+
+.burger-btn span::after,
+.burger-btn span::before {
+  content: '';
+  display: block;
+  transition: 0.5s;
+}
+
+.burger-btn span::before {
+  transform: translateY(-12px);
+}
+
+.burger-btn span::after {
+  transform: translateY(12px);
+}
+
+.burger-btn--active span {
+  height: 0;
+}
+
+.burger-btn--active span::before {
+  transform: rotate(45deg);
+}
+
+.burger-btn--active span::after {
+  transform: rotate(-45deg);
+}
+
+/*=======MEDIA 992 start========*/
+
+/*==================================BURGER END=====================================*/
+
 /* Slider */
 
 .slick-loading .slick-list {
@@ -7790,6 +7845,41 @@ body {
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header__burger {
+    display: block;
+    z-index: 1000;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+    z-index: 1000;
+    transition: all .3s ease 0s;
+  }
+
+  .header__nav--active {
+    top: 0;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    padding: 150px 0 0 3%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a.header__nav-link {
+    font-size: 30px;
+    color: #fdfdfd;
   }
 }
 
