@@ -5,6 +5,7 @@
 
 .special-wrap {
    position: relative;
+   overflow: hidden;
 }
 
 .special__title {
@@ -57,7 +58,21 @@
         img {
             width: 100%;
             display: block;
-        }
+        } 
+
+    @media (max-width: 1500px) {
+         top: 2000px;
+         left: 100px;
+    }
+
+    @media (max-width: 992px) {
+        top: 2400px;
+        left: 100px;
+    }
+
+     @media (max-width: 480px) {
+         display: none;
+     }
 }
 
 .i2 {
@@ -69,6 +84,22 @@
             width: 100%;
             display: block;
         }
+    
+    @media (max-width: 1500px) {
+            top: 1500px;
+            right: 100px;
+            
+        }
+
+    @media (max-width: 992px) {
+        top: 1700px;
+        right: 100px;
+
+    }
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 }
 
 .special__image-wrap {

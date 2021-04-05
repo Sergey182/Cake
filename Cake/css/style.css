@@ -7437,6 +7437,7 @@ body {
 
 .special-wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .special__title {
@@ -7842,6 +7843,18 @@ body {
   }
 }
 
+@media (max-width: 1500px) {
+  .i1 {
+    top: 2000px;
+    left: 100px;
+  }
+
+  .i2 {
+    top: 1500px;
+    right: 100px;
+  }
+}
+
 @media screen and (max-width: 1210px) {
   .header__burger {
     display: block;
@@ -7914,6 +7927,16 @@ body {
 
   .catalog__inner-card {
     width: 48%;
+  }
+
+  .i1 {
+    top: 2400px;
+    left: 100px;
+  }
+
+  .i2 {
+    top: 1700px;
+    right: 100px;
   }
 }
 
@@ -8091,6 +8114,14 @@ body {
   .catalog__inner-card {
     width: 70%;
     margin: 1rem auto;
+  }
+
+  .i1 {
+    display: none;
+  }
+
+  .i2 {
+    display: none;
   }
 }
 
