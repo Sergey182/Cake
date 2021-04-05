@@ -7865,15 +7865,24 @@ body {
 
   .header__nav-list {
     flex-direction: column;
-    padding: 150px 0 0 3%;
-    height: 50%;
+    padding: 50px 0 0 0;
+    height: 70%;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
 
   a.header__nav-link {
     font-size: 30px;
     color: #fdfdfd;
+  }
+
+  .header__nav-list li:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .header__nav-list li:not(:last-child):after {
+    display: none;
   }
 }
 
