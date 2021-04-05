@@ -7148,6 +7148,7 @@ body {
 }
 
 .header__top-contacts {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -7501,6 +7502,11 @@ body {
   padding: 3rem 0;
 }
 
+.special__image {
+  width: 100%;
+  display: block;
+}
+
 .testimonials {
   margin-bottom: 4rem;
 }
@@ -7836,19 +7842,7 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1210px) {
   .header__burger {
     display: block;
     z-index: 1000;
@@ -7880,6 +7874,37 @@ body {
   a.header__nav-link {
     font-size: 30px;
     color: #fdfdfd;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .header__top-items {
+    width: 100%;
+  }
+
+  .header__top-contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts-social {
+    display: none;
+  }
+
+  .catalog__inner-card {
+    width: 48%;
   }
 }
 
@@ -7967,5 +7992,176 @@ body {
 
   .textarea ::placeholder {
     font-size: calc(14px + 6.8 * ((100vw - 320px) / 1200));
+  }
+}
+
+@media (max-width: 650px) {
+  .catalog__inner-items {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) and (max-width: 767px) {
+  .catalog__title,
+  .special__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: calc(22px + 3.4 * ((100vw - 320px) / 1200));
+  }
+
+  .contacts__inner-content h3,
+  .contacts__inner-form h3 {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1200));
+  }
+
+  .header-slider__title {
+    font-size: calc(32px + 13.6 * ((100vw - 320px) / 1200));
+  }
+}
+
+@media (max-width: 620px) {
+  .catalog__title::after,
+  .catalog__title::before,
+  .special__title::after,
+  .special__title::before,
+  .testimonials__title::after,
+  .testimonials__title::before,
+  .contacts__title::after,
+  .contacts__title::before {
+    width: 3px;
+    height: 3px;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header-slider__title {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts__inner {
+    flex-direction: column;
+  }
+
+  .contacts__inner-content,
+  .contacts__inner-form {
+    flex-basis: 98%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts__inner-content h3 {
+    text-align: center;
+  }
+
+  .contacts-social-icons {
+    width: 100%;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .contacts__inner-form h3 {
+    text-align: center;
+  }
+
+  .form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .textarea textarea {
+    width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog__inner-card {
+    width: 70%;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 420px) and (max-width: 767px) {
+  .catalog__title,
+  .special__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: calc(17px + 5.1 * ((100vw - 320px) / 1200));
+  }
+
+  .contacts__inner-content h3,
+  .contacts__inner-form h3 {
+    font-size: calc(13px + 3.4 * ((100vw - 320px) / 1200));
+  }
+}
+
+@media (max-width: 420px) {
+  .catalog__title::after,
+  .catalog__title::before,
+  .special__title::after,
+  .special__title::before,
+  .testimonials__title::after,
+  .testimonials__title::before,
+  .contacts__title::after,
+  .contacts__title::before {
+    display: none;
+  }
+
+  .header-slider__title {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .header-slider__subtitle {
+    max-width: 70%;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-name input,
+  .form-email input {
+    min-width: 200px;
+  }
+
+  .textarea textarea {
+    width: 200px;
+  }
+}
+
+@media (max-width: 620px) and (min-width: 767px) {
+  .catalog__title,
+  .special__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: calc(22px + 2 * (100vw / 1200));
+  }
+
+  .contacts__inner-content h3,
+  .contacts__inner-form h3 {
+    font-size: calc(16px + 2 * (100vw / 1200));
+  }
+
+  .header-slider__title {
+    font-size: calc(32px + 8 * (100vw / 1200));
+  }
+}
+
+@media (max-width: 420px) and (min-width: 767px) {
+  .catalog__title,
+  .special__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: calc(17px + 3 * (100vw / 1200));
+  }
+
+  .contacts__inner-content h3,
+  .contacts__inner-form h3 {
+    font-size: calc(13px + 2 * (100vw / 1200));
   }
 }

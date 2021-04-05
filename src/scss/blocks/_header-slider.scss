@@ -35,6 +35,16 @@
     font-family: 'Lobster';
     font-weight: 900;
     margin-bottom: 3rem;
+
+    @media (max-width: 620px) {
+        @include adaptive-font(40, 32);
+        max-width: 80%;
+    }
+
+    @media (max-width: 420px) {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 }
 
 .header-slider__subtitle {
@@ -43,6 +53,12 @@
     font-family: 'Lobster';
     font-weight: normal;
     margin-bottom: 3rem;
+
+    @media (max-width: 420px) {
+        max-width: 70%;
+        text-align: center;
+        padding: 0 1rem;
+}
 }
 
 .header-slider__btn {
