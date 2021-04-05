@@ -7493,6 +7493,10 @@ body {
   color: #FF5975;
 }
 
+.slick-dots li button::before {
+  font-size: 3rem;
+}
+
 .contacts {
   background-color: #FFE9CC;
 }
