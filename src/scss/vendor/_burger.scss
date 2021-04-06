@@ -10,6 +10,12 @@
     position: relative;
     display: block;
     z-index: 15;
+
+    @media (max-width:370px) {
+width: 30px;
+height: 30px;
+    }
+    
 }
 
 .burger-btn span, .burger-btn span::after, .burger-btn span:before {

@@ -35,7 +35,13 @@
 
 .header__logo-img {
     max-width: 22%;
+
+    @media (max-width: 370px) {
+        max-width: 15%;
+    }
 }
+
+
 
 .logo-img {
     width: 100%;

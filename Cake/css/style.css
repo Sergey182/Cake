@@ -8125,6 +8125,13 @@ body {
   }
 }
 
+@media (max-width: 460px) {
+  .catalog__inner-card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
 @media (max-width: 420px) and (max-width: 767px) {
   .catalog__title,
   .special__title,
@@ -8171,6 +8178,17 @@ body {
 
   .textarea textarea {
     width: 200px;
+  }
+}
+
+@media (max-width: 370px) {
+  .burger-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__logo-img {
+    max-width: 15%;
   }
 }
 
